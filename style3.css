@@ -1,0 +1,131 @@
+/* Work on fixing sizes based on screen sizes */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  padding: 20px;
+  line-height: 1.5;
+  background: linear-gradient(black, black, white) no-repeat center/cover;
+}
+html {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* NAV BAR */
+nav {
+  background-color: black;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  height: 4em;
+  border-bottom: rgba(108, 107, 107, 0.4) solid 0.2rem;
+  border-right: rgba(108, 107, 107, 0.4) solid 0.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 2em;
+
+  color: white;
+}
+nav li:hover a {
+  color: black;
+}
+
+nav li {
+  border-right: white solid 1px;
+  padding: 0.5em;
+  display: flex;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  z-index: 1;
+  cursor: pointer;
+}
+nav li ul {
+  margin-top: 3.5em;
+  list-style: none;
+  position: absolute;
+  left: -10000px;
+}
+nav li:hover ul {
+  margin-top: 3.3333em;
+  left: 2em;
+  background-color: white;
+  width: 32.3%;
+}
+nav li ul li {
+  border-bottom: 1px solid #e9c529;
+  border-right: 1px solid #e9c529;
+}
+nav li ul li:active {
+  border-left: 10px solid #e3e8e2;
+}
+
+nav li ul li:hover {
+  border-left: 10px solid rgba(0, 12, 0, 0.6);
+}
+#backdrop {
+  background-color: rgb(67, 66, 66);
+}
+/*  QUIZ */
+div h3 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border: 1rem solid white;
+}
+#questionHolder {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border: solid white 0.2rem;
+}
+#questionHolder img {
+  height: 30%;
+  width: 30%;
+}
+h3 {
+  font-size: 2rem;
+  color: #676666;
+}
+#gridQuestion {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  border: solid white 0.2rem;
+}
+#gridQuestion input {
+  justify-content: center;
+  text-align: center;
+}
+#gridQuestion div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: solid white 0.2rem;
+  display: flex;
+}
+#gridQuestion div label {
+  font-size: 1.5rem;
+  margin-right: 0.2rem;
+}
+
+#submitQuestion {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#submitQuestion input {
+  padding: 1rem;
+  font-size: 1rem;
+  color: red;
+}

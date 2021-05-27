@@ -1,0 +1,163 @@
+/* Work on fixing sizes based on screen sizes */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+  padding: 20px;
+  line-height: 1.5;
+  background: linear-gradient(black, black, white) no-repeat center/cover;
+}
+html {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+i {
+  position: fixed;
+  font-size: 2rem;
+  color: white;
+  border: solid white 0.2rem;
+  padding: 1rem;
+  bottom: 0;
+  left: 1.5rem;
+  opacity: 0.98;
+  background-color: black;
+}
+i a {
+  /* display: none; */
+  position: relative;
+  transform: translateX(-1px);
+  z-index: 2;
+  font-size: 3rem;
+}
+i:hover {
+  background-color: white;
+  color: black;
+  transition: ease-in-out all 0.2s;
+  cursor: pointer;
+}
+/* NAV BAR */
+nav {
+  background-color: black;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  height: 4em;
+  border-bottom: rgba(108, 107, 107, 0.4) solid 0.2rem;
+  border-right: rgba(108, 107, 107, 0.4) solid 0.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 2em;
+
+  color: white;
+}
+nav li:hover a {
+  color: black;
+}
+
+nav li {
+  border-right: white solid 1px;
+  padding: 0.5em;
+  display: flex;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  z-index: 1;
+  cursor: pointer;
+}
+nav li ul {
+  margin-top: 3.5em;
+  list-style: none;
+  position: absolute;
+  left: -10000px;
+}
+nav li:hover ul {
+  margin-top: 3.3333em;
+  left: 2em;
+  background-color: white;
+  width: 32.3%;
+}
+nav li ul li {
+  border-bottom: 1px solid #e9c529;
+  border-right: 1px solid #e9c529;
+}
+nav li ul li:active {
+  border-left: 10px solid #e3e8e2;
+}
+
+nav li ul li:hover {
+  border-left: 10px solid rgba(0, 12, 0, 0.6);
+}
+#backdrop {
+  background-color: rgb(67, 66, 66);
+}
+/* Header */
+header h1,
+header p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 12, 0, 0.5);
+  color: #d6f9dd;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+header {
+  margin-top: 10px;
+  border-right: 5px solid rgba(0, 12, 0, 0.6);
+  border-bottom: 5px solid rgba(0, 12, 0, 0.6);
+}
+
+/* Neutrophils */
+#wrapper h2 {
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  border-bottom: solid 1px black;
+  border-right: solid 1px black;
+}
+img {
+  filter: sepia();
+}
+
+#wrapper img,
+#wrapper p {
+  float: right;
+  width: 46%;
+  height: 300px;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+#wrapper h1 {
+  margin-left: 1em;
+}
+#wrapper p {
+  padding-left: 20px;
+  border-left: solid 1px black;
+  color: white;
+  font-size: 0.9rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#wrapper div:hover img {
+  filter: none;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#wrapper h2 {
+  background-color: #ccccff;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  letter-spacing: 0.2rem;
+}
