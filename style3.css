@@ -1,6 +1,5 @@
 /* Work on fixing sizes based on screen sizes */
 * {
-  margin: 0;
   padding: 0;
 }
 
@@ -16,6 +15,9 @@ html {
 }
 
 /* NAV BAR */
+main {
+  background: navajowhite;
+}
 nav {
   background-color: black;
   list-style: none;
@@ -73,59 +75,20 @@ nav li ul li:hover {
   background-color: rgb(67, 66, 66);
 }
 /*  QUIZ */
-div h3 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+#QuizContiner {
+  background-color: papayawhip;
   text-align: center;
-  border: 1rem solid white;
-}
-#questionHolder {
-  display: flex;
   justify-content: center;
-  align-content: center;
-  text-align: center;
-  border: solid white 0.2rem;
-}
-#questionHolder img {
-  height: 30%;
-  width: 30%;
-}
-h3 {
   font-size: 2rem;
-  color: #676666;
-}
-#gridQuestion {
-  display: grid;
-  grid-template-columns: repeat(2, 0.5fr);
-  border: solid white 0.2rem;
-}
-#gridQuestion input {
-  justify-content: center;
-  text-align: center;
-}
-#gridQuestion div {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: solid white 0.2rem;
-  display: flex;
-}
-#gridQuestion div label {
-  font-size: 1.5rem;
-  margin-right: 0.2rem;
+  border: 1rem gray solid;
 }
 
-#submitQuestion {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
+.answers {
+  margin-bottom: 1rem;
 }
 
-#submitQuestion input {
+button {
   padding: 1rem;
   font-size: 1rem;
-  color: red;
+  margin-bottom: 1rem;
 }

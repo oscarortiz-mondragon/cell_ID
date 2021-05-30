@@ -1,6 +1,6 @@
 let cellTypes = document.getElementById("cellTypes")
 let about = document.getElementById("about")
-let quiz = document.getElementById("quiz")
+let quiz = document.getElementById("quizNav")
 let up = document.getElementById("up")
 // CHANGED THE COLOR OF NAV BAR ON HOVER
 cellTypes.onmouseover = whiteBackground
@@ -20,9 +20,6 @@ function normalBackground () {
 this.style.cssText = "background-color: black;  transition: ease-out 0.2s all;"
 }
 
-// MOVE BACK TO TOP ON CLICK OF ARROW
 
-up.addEventListener("click",function(){
-  
 
-})
+
