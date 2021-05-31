@@ -75,7 +75,7 @@ nav li ul li:hover {
   background-color: rgb(67, 66, 66);
 }
 /*  QUIZ */
-#QuizContiner {
+#QuizContainer {
   background-color: papayawhip;
   text-align: center;
   justify-content: center;
@@ -91,4 +91,13 @@ button {
   padding: 1rem;
   font-size: 1rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 720px) {
+  nav {
+    font-size: 0.4rem;
+  }
+  #QuizContainer {
+    font-size: 0.9rem;
+  }
 }

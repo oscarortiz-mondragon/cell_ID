@@ -1,3 +1,5 @@
+// How we store and add questions
+
 var myQuestions = [
 	{
 		question: "A cell with mostly red granules is what type of cell?",
@@ -47,6 +49,8 @@ var myQuestions = [
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
+
+// myQuestions is the array that's holding our questions and answers
 
 generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
 
