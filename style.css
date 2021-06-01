@@ -134,6 +134,7 @@ img {
   height: 300px;
   font-weight: bolder;
   font-size: 1.5em;
+  overflow: scroll;
 }
 
 #wrapper h1 {
@@ -172,12 +173,7 @@ img {
   i {
     padding: 0.5rem;
   }
-  i:hover {
-    background-color: white;
-    color: black;
-    transition: none;
-    cursor: pointer;
-  }
+
   header h1,
   header p {
     display: flex;
@@ -196,7 +192,7 @@ img {
     border-bottom: 5px solid rgba(0, 12, 0, 0.6);
   }
   #wrapper p {
-    font-size: 0.55rem;
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 800px) {
