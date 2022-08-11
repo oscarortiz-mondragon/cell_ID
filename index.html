@@ -11,17 +11,19 @@
 
 <!-- NAV BAR -->
   <nav>
-  <li id="cellTypes"> <a href="./index.html"> Cell Types</a>
-  <ul> 
-  <li><a href="#Neutrophils">Neutrophils</a></li>
-  <li><a href="#Lymphocytes">Lymphocytes</a></li>
-  <li><a href="#Basophils">Basophils</a></li>
-  <li><a href="#Eosinophils">Eosinophils</a></li>
-  <li><a href="#Monocytes">Monocytes</a></li>
-</ul>
-</li>
-  <li id="about"><a href="./about.html">About this page</a> </li>
-  <li id="quizNav"><a href="./quiz.html">Quiz here!</a></li>
+    <ul class="nav__list">
+      <li id="cellTypes" class="nav__item nav__itemRelative"> <a href="./index.html"> Cell Types</a>
+      <ul class="cellTypes__list"> 
+        <li class="cellType__item"><a href="#Lymphocytes">Lymphocytes</a></li>
+        <li class="cellType__item"><a href="#Basophils">Basophils</a></li>
+        <li class="cellType__item"><a href="#Neutrophils">Neutrophils</a></li>
+        <li class="cellType__item"><a href="#Eosinophils">Eosinophils</a></li>
+        <li class="cellType__item"><a href="#Monocytes">Monocytes</a></li>
+      </ul>
+      </li>
+      <li id="about nav__item"><a href="./about.html">About this page</a> </li>
+      <li id="quizNav nav__item"><a href="./quiz.html">Quiz here!</a></li>
+    </ul>
   </nav>
 
 
@@ -32,7 +34,10 @@
 <!-- JUMBOTROM -->
 <header><h1>Welcome, here we will provide tips and images</h1><p>Simply click on what category of cells you are looking for and study away with images and descriptions. When you feel ready, try our quiz!</p></header>
 <!-- To scrool back up -->
-<a href="#cellTypes"> <i class="fas fa-arrow-up" id="up"></i></a>
+
+<a href="#cellTypes" class="backToTop"> <i class="fas fa-arrow-up"></i></a>
+
+
 <!-- CLEAR FIX + Start of Cells -->
 <div   class="clearfix" id="wrapper">
 <div class="clearfix">

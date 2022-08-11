@@ -1,100 +1,102 @@
-/* Work on fixing sizes based on screen sizes */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+
 }
 
 body {
-  font-size: 62.5%;
-  padding: 20px;
   line-height: 1.5;
-  background: linear-gradient(black, black, white) no-repeat center/cover;
 }
 html {
   margin: 0;
   scroll-behavior: smooth;
 }
+:root{
+  --mainColor:#7d577c;
+  --accentColor:#ABB57E;
+  --white:#eee;
+  --lightBorder:hsl(71, 27%, 80%);
+}
+li{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: var(--accentColor);
+
+
+}
+/* Return to top button */
 i {
   position: fixed;
   font-size: 2rem;
-  color: white;
+  color: var(--white);
   border: solid white 0.2rem;
   padding: 1rem;
   bottom: 0;
   right: 1.5rem;
-  opacity: 0.98;
   background-color: black;
 }
-i a {
-  /* display: none; */
-  position: relative;
-  transform: translateX(-1px);
-  z-index: 2;
-  font-size: 3rem;
+
+.backToTop{
+  opacity: 0;
+  transition: opacity .2s linear;
 }
+.visible{
+  opacity: 1;
+  transition: opacity .2s linear;
+}
+
 i:hover {
-  background-color: white;
+  background-color: var(--white);
   color: black;
   transition: ease-in-out all 0.2s;
   cursor: pointer;
 }
 /* NAV BAR */
-nav {
-  background-color: black;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  height: 4em;
-  border-bottom: rgba(108, 107, 107, 0.4) solid 0.2rem;
-  border-right: rgba(108, 107, 107, 0.4) solid 0.2rem;
-}
 
-nav a {
-  text-decoration: none;
-  font-size: 2em;
+  nav{
+    padding: 20px;
+    background-color: var(--mainColor);
+    z-index: 10;
+  }
+  .nav__list{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+  }
+  .nav__itemRelative{
+    position: relative;
 
-  color: white;
-}
-nav li:hover a {
-  color: black;
-}
+  }
+  .cellTypes__list{
+    position: absolute;
+    left:-1000px;
+    background-color: var(--mainColor);
+    border: solid var(--lightBorder) 2px;
+    padding: 0 10px;
+  }
+  .cellType__item{
+    margin: 20px 0;
+    text-align: center;
+    font-size: .8em;
+  }
+    /* Subsections for Cell Types Hover Effect */
+  .nav__itemRelative:hover .cellTypes__list{
+    left: 0;
+  }
+  .cellType__item:hover{
+    border-left: var(--accentColor) solid 3px;
+  }
 
-nav li {
-  border-right: white solid 1px;
-  padding: 0.5em;
-  display: flex;
-  flex: 1;
-  text-align: center;
-  justify-content: center;
-  z-index: 1;
-  cursor: pointer;
-}
-nav li ul {
-  margin-top: 3.5em;
-  list-style: none;
-  position: absolute;
-  left: -10000px;
-}
-nav li:hover ul {
-  margin-top: 3.3333em;
-  left: 2em;
-  background-color: white;
-  width: 32.3%;
-}
-nav li ul li {
-  border-bottom: 1px solid #e9c529;
-  border-right: 1px solid #e9c529;
-}
-nav li ul li:active {
-  border-left: 10px solid #e3e8e2;
-}
 
-nav li ul li:hover {
-  border-left: 10px solid rgba(0, 12, 0, 0.6);
-}
-#backdrop {
-  background-color: rgb(67, 66, 66);
-}
+
 /* Header */
 header h1,
 header p {
@@ -103,7 +105,7 @@ header p {
   align-items: center;
   text-align: center;
   background-color: rgba(0, 12, 0, 0.5);
-  color: #d6f9dd;
+  color: var(--accentColor);
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bolder;
   font-size: 2rem;
@@ -143,7 +145,7 @@ img {
 #wrapper p {
   padding-left: 20px;
   border-left: solid 1px black;
-  color: white;
+  color: var(--white);
   font-size: 0.9rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -157,7 +159,7 @@ img {
   display: table;
 }
 #wrapper h2 {
-  background-color: #ccccff;
+  background-color: var(--white);
   font-size: 1.5rem;
   text-decoration: underline;
   letter-spacing: 0.2rem;
@@ -181,7 +183,7 @@ img {
     align-items: center;
     text-align: center;
     background-color: rgba(0, 12, 0, 0.5);
-    color: #d6f9dd;
+    color: var(--accentColor);
     font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: bolder;
     font-size: 1rem;
