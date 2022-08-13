@@ -119,5 +119,15 @@ i:hover {
   margin: 20px;
   font-size: 1.4em;
 
+}
 
+/* About Section */
+.about__container{
+position: absolute;
+transform: translate(-50%,-50%);
+top: 50%;
+left: 50%;
+font-size: 1.8em;
+color: var(--mainColor);
+text-align: center;
 }
