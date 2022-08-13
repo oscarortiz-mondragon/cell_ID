@@ -131,3 +131,22 @@ font-size: 1.8em;
 color: var(--mainColor);
 text-align: center;
 }
+
+/* Quiz Section */
+.quiz__container{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  background-color: var(--darkGray);
+  padding: 60px;
+  font-size: 1.4em;
+  width: 1000px;
+  text-align: center;
+
+}
+.answers label{
+  margin: 0 10px;
+}
+
+
