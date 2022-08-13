@@ -13,11 +13,13 @@ html {
   scroll-behavior: smooth;
 }
 :root{
-  --mainColor:#7d577c;
-  --accentColor:#ABB57E;
+  --mainColor:#5f385f;
+  --accentColor:#fff270;
   --white:#eee;
   --lightBorder:hsl(71, 27%, 80%);
+  --darkGray:rgb(225, 219, 219);
 }
+
 li{
   margin:0;
   padding:0;
@@ -26,7 +28,11 @@ li{
 a{
   text-decoration: none;
   color: var(--accentColor);
-
+}
+img{
+  height: auto;
+  width:400px;
+  margin: 20px auto 0px;
 
 }
 /* Return to top button */
@@ -34,11 +40,12 @@ i {
   position: fixed;
   font-size: 2rem;
   color: var(--white);
-  border: solid white 0.2rem;
+  border: solid --white 0.2rem;
   padding: 1rem;
   bottom: 0;
   right: 1.5rem;
-  background-color: black;
+  background-color: var(--mainColor);
+  border-radius: 100%;
 }
 
 .backToTop{
@@ -51,8 +58,8 @@ i {
 }
 
 i:hover {
-  background-color: var(--white);
-  color: black;
+  background-color: var(--accentColor);
+  color: var(--mainColor);
   transition: ease-in-out all 0.2s;
   cursor: pointer;
 }
@@ -61,12 +68,12 @@ i:hover {
   nav{
     padding: 20px;
     background-color: var(--mainColor);
-    z-index: 10;
+
   }
   .nav__list{
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     font-size: 1.5em;
@@ -95,110 +102,22 @@ i:hover {
     border-left: var(--accentColor) solid 3px;
   }
 
-
-
-/* Header */
-header h1,
-header p {
+/* MAIN Cell container */
+.title{
+  font-size: 2.5em;
+}
+.cells__TypesContainer{
+  background-color: var(--darkGray);
+  margin: 20px 100px 0px;
+  padding: 40px;
+  border-radius: 20px;
+}
+.cell__card{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: rgba(0, 12, 0, 0.5);
-  color: var(--accentColor);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bolder;
-  font-size: 2rem;
-}
-header {
-  margin-top: 10px;
-  border-right: 5px solid rgba(0, 12, 0, 0.6);
-  border-bottom: 5px solid rgba(0, 12, 0, 0.6);
-}
+  margin: 20px;
+  font-size: 1.4em;
 
-/* All images*/
-#wrapper h2 {
-  margin-top: 10px;
-  justify-content: center;
-  text-align: center;
-  align-self: center;
-  border-bottom: solid 1px black;
-  border-right: solid 1px black;
-}
-img {
-  filter: sepia();
-}
 
-#wrapper img,
-#wrapper p {
-  float: right;
-  width: 46%;
-  height: 300px;
-  font-weight: bolder;
-  font-size: 1.5em;
-  overflow: scroll;
-}
-
-#wrapper h1 {
-  margin-left: 1em;
-}
-#wrapper p {
-  padding-left: 20px;
-  border-left: solid 1px black;
-  color: var(--white);
-  font-size: 0.9rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#wrapper div:hover img {
-  filter: none;
-}
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-#wrapper h2 {
-  background-color: var(--white);
-  font-size: 1.5rem;
-  text-decoration: underline;
-  letter-spacing: 0.2rem;
-}
-/* for Phone that fit between 0 - 500px */
-@media screen and (max-width: 720px) {
-  nav {
-    font-size: 0.4rem;
-  }
-  img {
-    filter: none;
-  }
-  i {
-    padding: 0.5rem;
-  }
-
-  header h1,
-  header p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgba(0, 12, 0, 0.5);
-    color: var(--accentColor);
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-weight: bolder;
-    font-size: 1rem;
-  }
-  header {
-    margin-top: 10px;
-    border-right: 5px solid rgba(0, 12, 0, 0.6);
-    border-bottom: 5px solid rgba(0, 12, 0, 0.6);
-  }
-  #wrapper p {
-    font-size: 0.7rem;
-  }
-}
-@media screen and (max-width: 800px) {
-  img {
-    filter: none;
-  }
 }

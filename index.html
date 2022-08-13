@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cell ID Home</title>
   <script src="https://kit.fontawesome.com/ee9fd38bd3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+
 
 </head>
 <body>
@@ -26,62 +28,64 @@
     </ul>
   </nav>
 
-
-
-<!-- BACKDROP to Page -->
-
-<div id="backdrop">
-<!-- JUMBOTROM -->
-<header><h1>Welcome, here we will provide tips and images</h1><p>Simply click on what category of cells you are looking for and study away with images and descriptions. When you feel ready, try our quiz!</p></header>
-<!-- To scrool back up -->
+<!-- scroll to Top -->
 
 <a href="#cellTypes" class="backToTop"> <i class="fas fa-arrow-up"></i></a>
 
 
-<!-- CLEAR FIX + Start of Cells -->
-<div   class="clearfix" id="wrapper">
-<div class="clearfix">
-<h2 id="Neutrophils">Neutrophils</h2>
-<p >They are the
-body's primary defense against bacterial infection and physiologic stress. Normally, most of the neutrophils circulating
-in the bloodstream are in a mature form, with the nucleus of the cell being divided or segmented. Because of the
-segmented appearance of the nucleus, neutrophils are sometimes referred to as "segs." Less mature neutrophils - those that have recently been
-released from the bone marrow into the bloodstream - are known as "bands" or "stabs". Stab is a German term for rod.</p>
-<img  src="./images/Neutrophil.jpg" alt="Image of Neutrophils">
-</div>
-<div class="clearfix">
-<h2 id="Lymphocytes">Lymphocytes</h2>
-<p >The round, uniform nucleus and small amount of cytoplasm surrounding it are the best identifying characteristics for
-this cell. Lymphocytes are involved in the specific immune response including antigen-antibody reactions, and are the second most adundant cells in our body
-</p>
-<img  src="./images/Lymphocyte.gif">
-</div>
-<div class="clearfix">
-<h2 id="Basophils" >Basophils</h2>
-<p>Basophils are intermediate in size between neutrophils and eosinophils and have simple or bilobed nuclei. They contain
-many coarse purple granules that can vary in size or shape.</p>
-<img src="./images/basophil-2.jpg" alt="Image Of Basophil">
-</div>
-<div class="clearfix">
-<h2 id="Eosinophils" >Eosinophils</h2>
-<p>These cells are 12 - 17 µm in diameter - larger than neutrophils, and about 3 times the size of a red blood cell. You
-can see that eosinophils only have two lobes to their nucleus. These cells have large acidophilic specific granules -
-these stain bright red, or reddish-purple.</p>
-<img src="./images/Eosinophil.jpg" alt="Image of Eosinophils">
-</div>
-<div class="clearfix">
-<h2 id="Monocytes" >Monocytes</h2>
-<p>Monocytes are spherical in shape or may appear amoeboid. They are large in size and have a large nucleus
-that is usually bean shaped. This characteristic differentiates monocytes from neutrophils, which have several lobes
-with a divided nucleus. In tissues, monocytes transform to macrophages. </p>
-<img src="./images/Monocytes.jpg" alt="Image of Monocytes">
-</div>
-</div>
+<!--  Start of Cells -->
+<main class="cells__TypesContainer">
+  <h1 class="title">Cell Types</h1>
+  <div class="cell__card">
+    <div>
+      <h2 id="Neutrophils">Neutrophils</h2>
+      <p>They are the
+      body's primary defense against bacterial infection and physiologic stress. Normally, most of the neutrophils circulating
+      in the bloodstream are in a mature form, with the nucleus of the cell being divided or segmented. Because of the
+      segmented appearance of the nucleus, neutrophils are sometimes referred to as "segs." Less mature neutrophils - those that have recently been
+      released from the bone marrow into the bloodstream - are known as "bands" or "stabs". Stab is a German term for rod.</p>
+    </div>
+    <img  src="./images/Neutrophil.jpg" alt="Image of Neutrophils">
+  </div>
+  <div class="cell__card">
+    <div>
+      <h2 id="Lymphocytes">Lymphocytes</h2>
+      <p >The round, uniform nucleus and small amount of cytoplasm surrounding it are the best identifying characteristics for
+      this cell. Lymphocytes are involved in the specific immune response including antigen-antibody reactions, and are the second most adundant cells in our body
+      </p>
+    </div>
+    <img  src="./images/Lymphocyte.gif">
+  </div>
+  <div class="cell__card">
+    <div>
+      <h2 id="Basophils">Basophils</h2>
+      <p>Basophils are intermediate in size between neutrophils and eosinophils and have simple or bilobed nuclei. They contain
+      many coarse purple granules that can vary in size or shape.</p>
+    </div>
+    <img src="./images/basophil-2.jpg" alt="Image Of Basophil">
+  </div>
+  <div class="cell__card">
+    <div>
+      <h2 id="Eosinophils" >Eosinophils</h2>
+      <p>These cells are 12 - 17 µm in diameter - larger than neutrophils, and about 3 times the size of a red blood cell. You
+      can see that eosinophils only have two lobes to their nucleus. These cells have large acidophilic specific granules -
+      these stain bright red, or reddish-purple.</p>
+    </div>
+    <img src="./images/Eosinophil.jpg" alt="Image of Eosinophils">
+  </div>
+  <div class="cell__card">
+    <div>
+      <h2 id="Monocytes" >Monocytes</h2>
+      <p>Monocytes are spherical in shape or may appear amoeboid. They are large in size and have a large nucleus
+      that is usually bean shaped. This characteristic differentiates monocytes from neutrophils, which have several lobes
+      with a divided nucleus. In tissues, monocytes transform to macrophages. </p>
+    </div>
+    <img src="./images/Monocytes.jpg" alt="Image of Monocytes">
+  </div>
+</main>
 <!-- END OF CELLS -->
 
-</div>
-<!-- END OF BACKDROP -->
+
 </body>
-<link rel="stylesheet" href="./style.css">
 <script src="./script.js"></script>
 </html>
