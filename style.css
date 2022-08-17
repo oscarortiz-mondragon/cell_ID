@@ -63,6 +63,8 @@ i:hover {
   transition: ease-in-out all 0.2s;
   cursor: pointer;
 }
+
+
 /* NAV BAR */
 
   nav{
@@ -101,7 +103,49 @@ i:hover {
   .cellType__item:hover{
     border-left: var(--accentColor) solid 3px;
   }
+/* nav hamburger */
+.menu-btn{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 
+}
+.menu-btn__hamburger{
+  width: 30px;
+  height: 2px;
+  background-color: var(--accentColor);
+  position: absolute;
+  transition: linear .2s;
+}
+.menu-btn__hamburger::after,.menu-btn__hamburger::before{
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: var(--accentColor);
+  position: absolute;
+  transition: linear .2s;
+}
+.menu-btn__hamburger::after{
+  transform: translateY(10px);
+}
+.menu-btn__hamburger::before{
+  transform: translateY(-10px);
+}
+
+.menu-btn--open .menu-btn__hamburger::after{
+transform: rotate(45deg);
+}
+.menu-btn--open .menu-btn__hamburger::before{
+transform: rotate(-45deg);
+}
+.menu-btn--open .menu-btn__hamburger {
+background: transparent;
+transform: rotate(360deg);
+}
 /* MAIN Cell container */
 .title{
   font-size: 2.5em;
@@ -149,4 +193,6 @@ text-align: center;
   margin: 0 10px;
 }
 
-
+@media (max-width: 600px){
+  
+}

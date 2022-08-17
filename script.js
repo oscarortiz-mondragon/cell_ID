@@ -13,4 +13,11 @@ if(userDocHeight != "undefined"){
   backToTop.className = scrollPos > offset? "visible": "backToTop"
  })
 
+//  menu bar
+let menu = document.querySelector(".menu-btn")
+menu.addEventListener('click',()=>{
+  menu.classList.toggle("menu-btn--open");
+
+})
+
 
