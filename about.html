@@ -4,25 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cell ID About</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <section>
-      <nav>
-        <li id="cellTypes"> <a href="./index.html"> Cell Types</a>
-        
-        </li>
-        <li id="about"><a href="./about.html">About this page</a> </li>
-        <li id="quizNav"><a href="./quiz.html">Quiz here!</a></li>
+  <!-- NAV BAR -->
+  <nav id="nav">
+    <ul class="nav__list">
+      <li id="cellTypes" class="nav__item nav__itemRelative nav__item--translateX"> <a href="./index.html"> Cell Types</a>
+      <ul class="cellTypes__list"> 
+        <li class="cellType__item"><a href="#Lymphocytes">Lymphocytes</a></li>
+        <li class="cellType__item"><a href="#Basophils">Basophils</a></li>
+        <li class="cellType__item"><a href="#Neutrophils">Neutrophils</a></li>
+        <li class="cellType__item"><a href="#Eosinophils">Eosinophils</a></li>
+        <li class="cellType__item"><a href="#Monocytes">Monocytes</a></li>
+      </ul>
+      </li>
+      <li class="about nav__item nav__item--translateX"><a href="./about.html">About this page</a> </li>
+      <li class="quizNav nav__item nav__item--translateX"><a href="./quiz.html">Quiz here!</a></li>
+      <div class="menu-btn">
+        <div class="menu-btn__hamburger"></div>
+      </div>
+    </ul>
     
+  </nav>
 
-  </nav></section>
-    <!-- END OF NAV BAR -->
-  <section><header>
-    <p>Welcome,this page was created while I was working as a MLS at a hospital. I felt at many times that if I was able to study at home the material I learned at work, work would be much more easier. So,I took initivate and made this website where I would both improve myself at my current work while also focusing on the future where I would want to be a Web developer.</p>
-  </header></section>
+
+  <main class="about__container">
+<h1>Our Mission</h1>
+    <p>This page was created while I was working as a MLS at a hospital. I felt at many times that if I was able to study at home the material I learned at work, work would be much more easier. So,I took initiated and made this website where I would both improve myself at my current work while also focusing on the future where I would want to be a Web developer.</p>
+  </main>
+
 
   <!-- END OF INTRO -->
 </body>
-<link rel="stylesheet" href="./style2.css">
 <script src="./script.js"></script>
 </html>

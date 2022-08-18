@@ -4,32 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz!</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <nav>
-    <li id="cellTypes"> <a href="./index.html"> Cell Types</a>
-     
-    </li>
-    <li id="about"><a href="./about.html">About this page</a> </li>
-    <li id="quizNav"><a href="./quiz.html">Quiz here!</a></li>
-  </nav>
-  <section id="QuizContainer">
+  <!-- NAV BAR -->
+  <nav id="nav">
+    <ul class="nav__list">
+      <li id="cellTypes" class="nav__item nav__itemRelative nav__item--translateX"> <a href="./index.html"> Cell Types</a>
+      <ul class="cellTypes__list"> 
+        <li class="cellType__item"><a href="#Lymphocytes">Lymphocytes</a></li>
+        <li class="cellType__item"><a href="#Basophils">Basophils</a></li>
+        <li class="cellType__item"><a href="#Neutrophils">Neutrophils</a></li>
+        <li class="cellType__item"><a href="#Eosinophils">Eosinophils</a></li>
+        <li class="cellType__item"><a href="#Monocytes">Monocytes</a></li>
+      </ul>
+      </li>
+      <li class="about nav__item nav__item--translateX"><a href="./about.html">About this page</a> </li>
+      <li class="quizNav nav__item nav__item--translateX"><a href="./quiz.html">Quiz here!</a></li>
+      <div class="menu-btn">
+        <div class="menu-btn__hamburger"></div>
+      </div>
+    </ul>
     
-      
+  </nav>
+
+<!-- scroll to Top -->
+
+<a href="#cellTypes" class="backToTop"> <i class="fas fa-arrow-up"></i></a>
+  <main class="quiz__container">
+    
     <div><h3>Questions!</h3></div>
     
-  
     <div id="quiz"></div>
     <button id="submit">Get Results</button>
     <div id="results"></div>
- 
   
-  </section>
+  </main>
 
 
 
 </body>
-<link rel="stylesheet" href="./style3.css">
 <script src="./script.js"></script>
 <script src="./scriptQuestions.js"></script>
 </html>

@@ -1,25 +1,36 @@
-let cellTypes = document.getElementById("cellTypes")
-let about = document.getElementById("about")
-let quiz = document.getElementById("quizNav")
-let up = document.getElementById("up")
-// CHANGED THE COLOR OF NAV BAR ON HOVER
-cellTypes.onmouseover = whiteBackground
-cellTypes.onmouseleave = normalBackground
+let backToTop = document.querySelector(".backToTop");
+let navBar = document.getElementById("nav")
+let navItem = document.querySelectorAll(".nav__item")
 
-about.onmouseover = whiteBackground
-about.onmouseleave = normalBackground
+// opacity change of back to top
+let body = document.body;
+let docElem = document.documentElement;
+let offset = 100;
+let userDocHeight = Math.max(body.offsetHeight, body.scrollHeight, docElem.offsetHeight,docElem.clientHeight, docElem.scrollHeight);
+if(userDocHeight != "undefined"){
+  offset = userDocHeight/4;
+}
+ window.addEventListener("scroll",(event)=>{
+  scrollPos = docElem.scrollTop || body.scrollTop;
+  backToTop.className = scrollPos > offset? "visible": "backToTop"
+ })
 
-quiz.onmouseover = whiteBackground
-quiz.onmouseleave = normalBackground
-
-function whiteBackground (){
-  this.style.cssText = "background-color:#d6f9dd;"
+//  menu bar
+let menu = document.querySelector(".menu-btn")
+menu.addEventListener('click',()=>{
+  menu.classList.toggle("menu-btn--open");
+  for(let i = 0; i < navItem.length;i++){
+    navItem[i].classList.toggle("nav__item--translateX")
+  }
+  slidingNavBar();
+  }
+  
+ 
+)
+// Sliding Nav bar taking up full screen
+function slidingNavBar(){
+    navBar.classList.toggle("navBar--slide")
+  
 }
 
-function normalBackground () {
-this.style.cssText = "background-color: black;  transition: ease-out 0.2s all;"
-}
-
-
-
-
+// styling nav items to fit horizontal nav bar
