@@ -71,6 +71,7 @@ i:hover {
     padding: 20px;
     background-color: var(--mainColor);
 
+
   }
   .nav__list{
     display: flex;
@@ -79,6 +80,7 @@ i:hover {
     justify-content: space-around;
     align-items: center;
     font-size: 1.5em;
+    transition: translate linear .3s;
   }
   .nav__itemRelative{
     position: relative;
@@ -105,15 +107,19 @@ i:hover {
   }
 /* nav hamburger */
 .menu-btn{
-  position: relative;
+  position: absolute;
   width: 50px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-
+  opacity: 0;
+  pointer-events: none;
+  
+  
 }
+
+
 .menu-btn__hamburger{
   width: 30px;
   height: 2px;
@@ -146,6 +152,7 @@ transform: rotate(-45deg);
 background: transparent;
 transform: rotate(360deg);
 }
+
 /* MAIN Cell container */
 .title{
   font-size: 2.5em;
@@ -187,12 +194,73 @@ text-align: center;
   font-size: 1.4em;
   width: 1000px;
   text-align: center;
-
 }
 .answers label{
   margin: 0 10px;
 }
 
-@media (max-width: 600px){
+@media (max-width:700px) {
+  /* mobile nar bar */
+ nav{
+  padding: 0;
+ }
+  .menu-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    opacity: 1;
+    pointer-events:all;
+
+  }
+  /* causes links to disappear at smaller sizes and when the hamburger is clicked on, is removed and items are seen again */
+  .nav__item--translateX{
+    transform: translateY(-1000px);
+  }
+
+  .navBar--slide{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
   
+  }
+  .nav__list{
+    flex-direction: column;
+    height: 100px;
+    gap:40px;
+  }
+  
+  .nav__itemRelative:hover .cellTypes__list{
+    left: -1000px;
+    display: none;
+  }
+
+  /* cell ID */
+img{
+  width: 300px;
+}
+.cells__TypesContainer{
+  text-align: center;
+}
+  /* about */
+  .about__container{
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    font-size: 1.3em;
+    color: var(--mainColor);
+    text-align: center;
+    z-index: -2;
+    }
+  /* quiz */
+  .quiz__container{
+    z-index: -2;
+    background-color: var(--darkGray);
+    font-size: 1.4em;
+    text-align: center;
+  }
 }

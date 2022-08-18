@@ -8,13 +8,24 @@
 </head>
 <body>
   <!-- NAV BAR -->
-  <nav>
+  <nav id="nav">
     <ul class="nav__list">
-      <li id="cellTypes" class="nav__item nav__itemRelative"> <a href="./index.html"> Cell Types</a>
+      <li id="cellTypes" class="nav__item nav__itemRelative nav__item--translateX"> <a href="./index.html"> Cell Types</a>
+      <ul class="cellTypes__list"> 
+        <li class="cellType__item"><a href="#Lymphocytes">Lymphocytes</a></li>
+        <li class="cellType__item"><a href="#Basophils">Basophils</a></li>
+        <li class="cellType__item"><a href="#Neutrophils">Neutrophils</a></li>
+        <li class="cellType__item"><a href="#Eosinophils">Eosinophils</a></li>
+        <li class="cellType__item"><a href="#Monocytes">Monocytes</a></li>
+      </ul>
       </li>
-      <li id="about nav__item"><a href="./about.html">About this page</a> </li>
-      <li id="quizNav nav__item"><a href="./quiz.html">Quiz here!</a></li>
+      <li class="about nav__item nav__item--translateX"><a href="./about.html">About this page</a> </li>
+      <li class="quizNav nav__item nav__item--translateX"><a href="./quiz.html">Quiz here!</a></li>
+      <div class="menu-btn">
+        <div class="menu-btn__hamburger"></div>
+      </div>
     </ul>
+    
   </nav>
 
 <!-- scroll to Top -->

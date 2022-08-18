@@ -8,19 +8,27 @@
 </head>
 <body>
   <!-- NAV BAR -->
-  <nav>
+  <nav id="nav">
     <ul class="nav__list">
-      <li id="cellTypes" class="nav__item nav__itemRelative"> <a href="./index.html"> Cell Types</a>
+      <li id="cellTypes" class="nav__item nav__itemRelative nav__item--translateX"> <a href="./index.html"> Cell Types</a>
+      <ul class="cellTypes__list"> 
+        <li class="cellType__item"><a href="#Lymphocytes">Lymphocytes</a></li>
+        <li class="cellType__item"><a href="#Basophils">Basophils</a></li>
+        <li class="cellType__item"><a href="#Neutrophils">Neutrophils</a></li>
+        <li class="cellType__item"><a href="#Eosinophils">Eosinophils</a></li>
+        <li class="cellType__item"><a href="#Monocytes">Monocytes</a></li>
+      </ul>
       </li>
-      <li id="about nav__item"><a href="./about.html">About this page</a> </li>
-      <li id="quizNav nav__item"><a href="./quiz.html">Quiz here!</a></li>
+      <li class="about nav__item nav__item--translateX"><a href="./about.html">About this page</a> </li>
+      <li class="quizNav nav__item nav__item--translateX"><a href="./quiz.html">Quiz here!</a></li>
+      <div class="menu-btn">
+        <div class="menu-btn__hamburger"></div>
+      </div>
     </ul>
+    
   </nav>
 
-<!-- scroll to Top -->
 
-<a href="#cellTypes" class="backToTop"> <i class="fas fa-arrow-up"></i></a>
-    <!-- END OF NAV BAR -->
   <main class="about__container">
 <h1>Our Mission</h1>
     <p>This page was created while I was working as a MLS at a hospital. I felt at many times that if I was able to study at home the material I learned at work, work would be much more easier. So,I took initiated and made this website where I would both improve myself at my current work while also focusing on the future where I would want to be a Web developer.</p>

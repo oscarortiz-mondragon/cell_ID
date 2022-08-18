@@ -1,4 +1,6 @@
 let backToTop = document.querySelector(".backToTop");
+let navBar = document.getElementById("nav")
+let navItem = document.querySelectorAll(".nav__item")
 
 // opacity change of back to top
 let body = document.body;
@@ -17,7 +19,18 @@ if(userDocHeight != "undefined"){
 let menu = document.querySelector(".menu-btn")
 menu.addEventListener('click',()=>{
   menu.classList.toggle("menu-btn--open");
+  for(let i = 0; i < navItem.length;i++){
+    navItem[i].classList.toggle("nav__item--translateX")
+  }
+  slidingNavBar();
+  }
+  
+ 
+)
+// Sliding Nav bar taking up full screen
+function slidingNavBar(){
+    navBar.classList.toggle("navBar--slide")
+  
+}
 
-})
-
-
+// styling nav items to fit horizontal nav bar
